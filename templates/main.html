@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогнозирование соотношения матрица-наполнитель</title>
+</head>
+<body>
+    <h1>Прогнозирование соотношения матрица-наполнитель</h1>
+    <form action="" method="post">
+    <fieldset>
+        <legend>Введите характеристики</legend>
+    <p>
+	    <label for="var1">Плотность, кг/м3</label>
+	    <input type="text" name="var1" required>
+    </p>
+    <p>
+	    <label for="var2">Модуль упругости, ГПа</label>
+	    <input type="text" name="var2" required>
+    </p>
+    <p>
+	    <label for="var3">Количество отвердителя, м.%</label>
+	    <input type="text" name="var3" required>
+    </p>
+    <p>
+        <label for="var4">Содержание эпоксидных групп,%_2</label>
+	    <input type="text" name="var4" required>
+    </p>
+    <p>
+        <label for="var5">Температура вспышки, С_2</label>
+	    <input type="text" name="var5" required>
+    </p>
+    <p>
+        <label for="var6">Поверхностная плотность, г/м2</label>
+	    <input type="text" name="var6" required>
+    </p>
+    <p>
+        <label for="var7">Модуль упругости при растяжении, ГПа</label>
+	    <input type="text" name="var7" required>
+    </p>
+    <p>
+        <label for="var8">Прочность при растяжении, МПа</label>
+	    <input type="text" name="var8" required>
+    </p>
+    <p>
+        <label for="var9">Потребление смолы, г/м2</label>
+	    <input type="text" name="var9" required>
+    </p>
+    <p>
+        <label for="var10">Угол нашивки, град</label>
+	    <input type="number" name="var10" min='0' max='90' step='1' required>
+    </p>
+    <p>
+        <label for="var11">Шаг нашивки</label>
+	    <input type="text" name="var11" required>
+    </p>
+    <p>
+        <label for="var12">Плотность нашивки</label>
+	    <input type="text" name="var12" required>
+	</p>
+    </fieldset>
+	<p>
+	    <input type="submit" value="Спрогнозировать">
+	</p>
+    </form>
+    <p>
+    {% if message %}
+        <p>
+        <b>
+        {{message}}
+        </b>
+        </p>
+    {% endif %}
+    </p>
+</body>
+</html>
