@@ -28,7 +28,7 @@ def main():
         pred = scaler_y.inverse_transform(pred)
 
         message = f'Спрогнозированное cоотношение матрица-наполнитель для введенных параметров: {pred}'
-    return render_template('main.html', message=message) #переделать мэсседж
+    return render_template('main.html', message=message)
 
 
 if __name__ == '__main__':
